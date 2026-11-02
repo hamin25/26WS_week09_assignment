@@ -2,6 +2,7 @@ package org.example.jpabook.week09_jpa_project.entity;
 
 
 import jakarta.persistence.*;
+import org.example.jpabook.week09_jpa_project.dto.MusicRequest;
 
 @Entity
 @Table(name="music")
@@ -35,12 +36,12 @@ public class Music {
 
     protected Music(){}
 
-    public void update(BookRequest request){
-        this.title = request.title;
-        this.artist = request.artist;
-        this.category = request.category;
-        this.releaseYear = request.releaseyear;
-        this.rating = request.rating;
+    public void update(MusicRequest request){
+        this.title = request.title();
+        this.artist = request.artist();
+        this.category = request.category();
+        this.releaseYear = request.releaseYear();
+        this.rating = request.rating();
     }
 
 
