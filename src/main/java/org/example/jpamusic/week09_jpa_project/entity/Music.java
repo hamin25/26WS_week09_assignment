@@ -3,6 +3,7 @@ package org.example.jpamusic.week09_jpa_project.entity;
 
 import jakarta.persistence.*;
 import org.example.jpamusic.week09_jpa_project.dto.MusicRequest;
+import org.example.jpamusic.week09_jpa_project.dto.MusicResponse;
 
 @Entity
 @Table(name="music")
@@ -35,6 +36,14 @@ public class Music {
     public Double getRating(){return rating;}
 
     protected Music(){}
+
+    public Music(MusicRequest request){
+        this.title = request.title();
+        this.artist = request.artist();
+        this.category = request.category();
+        this.releaseYear = request.releaseYear();
+        this.rating = request.rating();
+    }
 
     public void update(MusicRequest request){
         this.title = request.title();
