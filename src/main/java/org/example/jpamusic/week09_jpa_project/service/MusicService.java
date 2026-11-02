@@ -5,10 +5,12 @@ import org.example.jpamusic.week09_jpa_project.dto.MusicResponse;
 import org.example.jpamusic.week09_jpa_project.entity.Music;
 import org.example.jpamusic.week09_jpa_project.repository.MusicRepository;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+@Service
 public class MusicService {
     private final MusicRepository repository;
     public MusicService(MusicRepository repository){
