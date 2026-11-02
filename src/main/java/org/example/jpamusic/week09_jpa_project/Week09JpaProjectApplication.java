@@ -1,4 +1,4 @@
-package org.example.jpabook.week09_jpa_project;
+package org.example.jpamusic.week09_jpa_project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

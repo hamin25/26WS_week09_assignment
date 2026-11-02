@@ -1,4 +1,4 @@
-package org.example.jpabook.week09_jpa_project.dto;
+package org.example.jpamusic.week09_jpa_project.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

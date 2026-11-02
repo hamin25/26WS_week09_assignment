@@ -1,6 +1,6 @@
-package org.example.jpabook.week09_jpa_project.dto;
+package org.example.jpamusic.week09_jpa_project.dto;
 
-import org.example.jpabook.week09_jpa_project.entity.Music;
+import org.example.jpamusic.week09_jpa_project.entity.Music;
 
 public record MusicResponse (
         Long id, String title, String artist, String category, Integer releaseYear, Double rating

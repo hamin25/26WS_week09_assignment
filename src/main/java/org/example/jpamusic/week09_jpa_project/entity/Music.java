@@ -1,8 +1,8 @@
-package org.example.jpabook.week09_jpa_project.entity;
+package org.example.jpamusic.week09_jpa_project.entity;
 
 
 import jakarta.persistence.*;
-import org.example.jpabook.week09_jpa_project.dto.MusicRequest;
+import org.example.jpamusic.week09_jpa_project.dto.MusicRequest;
 
 @Entity
 @Table(name="music")
