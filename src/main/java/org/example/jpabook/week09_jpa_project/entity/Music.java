@@ -10,10 +10,6 @@ public class Music {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @Column(nullable = false, length = 200)
     private String title;
 
@@ -39,7 +35,13 @@ public class Music {
 
     protected Music(){}
 
-
+    public void update(BookRequest request){
+        this.title = request.title;
+        this.artist = request.artist;
+        this.category = request.category;
+        this.releaseYear = request.releaseyear;
+        this.rating = request.rating;
+    }
 
 
     public void setId(Long id) {
